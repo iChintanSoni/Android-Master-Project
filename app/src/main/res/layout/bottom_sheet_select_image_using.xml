@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.chintansoni.android.masterproject.customview.RobotoTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_normal"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:text="@string/bottom_sheet_select_image_using_choose" />
+
+    <com.chintansoni.android.masterproject.customview.RobotoButton
+        android:id="@+id/btn_bottom_sheet_select_image_using_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:background="?attr/selectableItemBackground"
+        android:drawablePadding="@dimen/spacing_normal"
+        android:drawableStart="@drawable/ic_camera"
+        android:gravity="center_vertical"
+        android:padding="@dimen/spacing_small"
+        android:text="@string/bottom_sheet_select_image_using_camera" />
+
+    <com.chintansoni.android.masterproject.customview.RobotoButton
+        android:id="@+id/btn_bottom_sheet_select_image_using_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_large"
+        android:background="?attr/selectableItemBackground"
+        android:drawablePadding="@dimen/spacing_normal"
+        android:drawableStart="@drawable/ic_gallery"
+        android:gravity="center_vertical"
+        android:padding="@dimen/spacing_small"
+        android:text="@string/bottom_sheet_select_image_using_gallery" />
+
+</LinearLayout>

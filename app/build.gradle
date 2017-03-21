@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.chintansoni.android.masterproject"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables {
+            useSupportLibrary true
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+def SUPPORT_LIBRARY_VERSION = "25.3.0"
+def GLIDE_VERSION = "2.0.1"
+def BUTTER_KNIFE_VERSION = "8.5.1"
+def EASY_PERMISSIONS_VERSION = "0.2.1"
+def OK_HTTP_VERSION = "3.4.1"
+def RETROFIT_VERSION = "2.1.0"
+def GSON_VERSION = "2.7"
+def EVENT_BUS_VERSION = "3.0.0"
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    // Android Support Library
+    compile "com.android.support:design:$SUPPORT_LIBRARY_VERSION"
+    compile "com.android.support:appcompat-v7:$SUPPORT_LIBRARY_VERSION"
+    // Field and method binding for Android views
+    compile "com.jakewharton:butterknife:$BUTTER_KNIFE_VERSION"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$BUTTER_KNIFE_VERSION"
+    // Image Loading Library
+    compile "jp.wasabeef:glide-transformations:$GLIDE_VERSION"
+    // Permission Library
+    compile "pub.devrel:easypermissions:$EASY_PERMISSIONS_VERSION"
+    // Networking Library
+    compile "com.squareup.okhttp3:okhttp:$OK_HTTP_VERSION"
+    compile "com.squareup.okhttp3:logging-interceptor:$OK_HTTP_VERSION"
+    compile "com.squareup.retrofit2:retrofit:$RETROFIT_VERSION"
+    compile "com.squareup.retrofit2:converter-gson:$RETROFIT_VERSION"
+    compile "com.google.code.gson:gson:$GSON_VERSION"
+    // Event Bus Library
+    compile "org.greenrobot:eventbus:$EVENT_BUS_VERSION"
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Use Default Spacing for layouts. This would be used in padding, margin properties-->
+    <dimen name="spacing_extra_small">4dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_normal">16dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="spacing_extra_large">32dp</dimen>
+
+    <!--Text Size-->
+    <dimen name="text_extra_small">12sp</dimen>
+    <dimen name="text_small">14sp</dimen>
+    <dimen name="text_normal">16sp</dimen>
+    <dimen name="text_large">18sp</dimen>
+    <dimen name="text_extra_large">22sp</dimen>
+
+    <!--Defaults for Progress Dialog-->
+    <string name="default_progress_dialog_title">Loading</string>
+    <string name="default_progress_dialog_message">Please wait…</string>
+
+    <!--Defaults for Alert Dialog-->
+    <string name="default_alert_dialog_button_title">OK</string>
+
+    <!--Defaults for SnackBar-->
+    <string name="default_snackbar_action_title">Okay</string>
+
+    <!--Defaults for DrawerLayouts-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!---->
+    <declare-styleable name="roboto">
+        <attr name="font" format="integer">
+            <enum name="roboto_black" value="0" />
+            <enum name="roboto_black_italic" value="1" />
+            <enum name="roboto_bold" value="2" />
+            <enum name="roboto_bold_italic" value="3" />
+            <enum name="roboto_italic" value="4" />
+            <enum name="roboto_light" value="5" />
+            <enum name="roboto_light_italic" value="6" />
+            <enum name="roboto_medium" value="7" />
+            <enum name="roboto_medium_italic" value="8" />
+            <enum name="roboto_regular" value="9" />
+            <enum name="roboto_thin" value="10" />
+            <enum name="roboto_thin_italic" value="11" />
+            <enum name="roboto_condensed_bold" value="12" />
+            <enum name="roboto_condensed_bold_italic" value="13" />
+            <enum name="roboto_condensed_italic" value="14" />
+            <enum name="roboto_condensed_light" value="15" />
+            <enum name="roboto_condensed_light_italic" value="16" />
+            <enum name="roboto_condensed_regular" value="17" />
+        </attr>
+    </declare-styleable>
+
+    <string-array name="roboto_fonts">
+        <item>Roboto-Black.ttf</item>
+        <item>Roboto-BlackItalic.ttf</item>
+        <item>Roboto-Bold.ttf</item>
+        <item>Roboto-BoldItalic.ttf</item>
+        <item>Roboto-Italic.ttf</item>
+        <item>Roboto-Light.ttf</item>
+        <item>Roboto-LightItalic.ttf</item>
+        <item>Roboto-Medium.ttf</item>
+        <item>Roboto-MediumItalic.ttf</item>
+        <item>Roboto-Regular.ttf</item>
+        <item>Roboto-Thin.ttf</item>
+        <item>Roboto-ThinItalic.ttf</item>
+        <item>RobotoCondensed-Bold.ttf</item>
+        <item>RobotoCondensed-BoldItalic.ttf</item>
+        <item>RobotoCondensed-Italic.ttf</item>
+        <item>RobotoCondensed-Light.ttf</item>
+        <item>RobotoCondensed-LightItalic.ttf</item>
+        <item>RobotoCondensed-Regular.ttf</item>
+    </string-array>
+
+    <!--Default message when Internet Connection is not available-->
+    <string name="no_internet_connection">No Internet Available</string>
+
+    <string name="internal_storage">Internal storage</string>
+
+    <string name="rationale_storage">This app requires permission to storage to store and retrieve pictures captured from camera.</string>
+    <string name="rationale_never_ask_storage">Looks like permission for storage has been permanently disabled. Go to Settings and turn it On.</string>
+    <string name="bottom_sheet_select_image_using_choose">Choose</string>
+    <string name="bottom_sheet_select_image_using_camera">Camera</string>
+    <string name="bottom_sheet_select_image_using_gallery">Gallery</string>
+    <string name="title_settings_dialog">Oops !!!</string>
+    <string name="title_settings_button_setting">Settings</string>
+    <string name="title_settings_button_cancel">Cancel</string>
+</resources>

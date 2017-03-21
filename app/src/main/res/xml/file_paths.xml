@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!--TODO: Don't forget to replace the package name with your package name in path attribute-->
+    <external-path
+        name="my_images"
+        path="Android/data/com.chintansoni.android.masterproject/files/Pictures" />
+</paths>

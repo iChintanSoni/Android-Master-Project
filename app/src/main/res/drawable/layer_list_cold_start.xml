@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list android:opacity="opaque">
+            <item android:drawable="@color/colorPrimary" />
+            <!--TODO: Replace with your App Icon-->
+            <!--<item>-->
+            <!--<bitmap android:gravity="center" android:src="@drawable/logo_splash" />-->
+            <!--</item>-->
+        </layer-list>
+    </item>
+</selector>
