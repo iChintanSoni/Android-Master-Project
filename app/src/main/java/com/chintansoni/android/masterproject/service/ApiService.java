@@ -47,14 +47,21 @@ public class ApiService extends Service {
             return super.onStartCommand(intent, flags, startId);
 
         String action = intent.getAction();
-        if (action.equals(LoginApi.ACTION))
-            LoginApi.fire(provideRestAdapter(API_URL), intent.getExtras());
-        else if (action.equals(CitiesApi.ACTION))
-            CitiesApi.fire(provideRestAdapter(API_URL));
-        else if (action.equals(NotificationsDeleteApi.ACTION))
-            NotificationsDeleteApi.fire(provideRestAdapter(API_URL), intent.getExtras());
-        else if (action.equals(UploadImageApi.ACTION))
-            UploadImageApi.fire(this, provideRestAdapter(API_URL), intent.getExtras());
+        switch (action) {
+            case LoginApi.ACTION:
+                LoginApi.fire(provideRestAdapter(API_URL), intent.getExtras());
+                break;
+            case CitiesApi.ACTION:
+                CitiesApi.fire(provideRestAdapter(API_URL));
+                break;
+            case NotificationsDeleteApi.ACTION:
+                NotificationsDeleteApi.fire(provideRestAdapter(API_URL), intent.getExtras());
+                break;
+            case UploadImageApi.ACTION:
+                UploadImageApi.fire(this, provideRestAdapter(API_URL), intent.getExtras());
+                break;
+        }
+
         return super.onStartCommand(intent, flags, startId);
     }
 
