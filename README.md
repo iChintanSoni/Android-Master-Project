@@ -12,7 +12,7 @@ This is a starter project when starting any fresh project.
 * BaseXXX classes:
   - Variety of BaseXXX classes to extend your Android Components like:
     - **BaseAppCompatActivity.java**: Every Activity class will be extending this class. Example: SplashActivity.java extends BaseAppCompatActivity.java
-    - **BaseToolBarActivity.java**: This class itself extends BaseAppCompatActivity.java Every BaseAppComaptActivity that uses toolbar should extend this class. Example: LoginActivity.java extends BaseToolBarActivity.java
+    - **BaseToolBarActivity.java**: This class itself extends BaseAppCompatActivity.java Every BaseAppCompatActivity that uses toolbar should extend this class. Example: LoginActivity.java extends BaseToolBarActivity.java
     - **BaseNavigationDrawerActivity.java**: This class itself extends BaseToolBarActivity.java. Any Activity that uses Navigation Drawer in its layout should extend this class. Example: HomeActivity.java extends BaseNavigationDrawerActivity.java
     - **BaseFragment.java**: Every Fragment should extend this class.
     - **BaseDialogFragment.java**: Every DaialogFragment should extend this class.
